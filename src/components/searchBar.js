@@ -6,7 +6,7 @@ class SearchBar extends Component {
 		super(props)
 
 		this.state = {
-			term: 'Test'
+			term: ''
 		}
 	}
 
@@ -14,7 +14,6 @@ class SearchBar extends Component {
 		return (
 			<div>
 				<input value={this.state.term} onChange={this.onInputChange}/>
-				<h1>{this.state.term}</h1>
 			</div>
 		)
 	}
